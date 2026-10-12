@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A simple introduction to what we do and how to get in touch.">
+  <title>EE.ORG TESTING | Welcome</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172033;
+      --muted: #5d687b;
+      --brand: #2563eb;
+      --brand-dark: #1d4ed8;
+      --surface: #ffffff;
+      --page: #f4f7fb;
+      --line: #e3e9f2;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--page);
+      line-height: 1.6;
+    }
+    a { color: inherit; }
+    .wrap { width: min(1080px, calc(100% - 40px)); margin-inline: auto; }
+    header {
+      background: rgba(255,255,255,.94);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .brand {
+      font-size: 1.05rem;
+      font-weight: 800;
+      letter-spacing: .04em;
+      text-decoration: none;
+    }
+    .nav a.contact-link {
+      color: var(--brand);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    main { padding: 72px 0 64px; }
+    .hero {
+      padding: clamp(32px, 7vw, 76px);
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: 0 18px 55px rgba(28, 45, 75, .07);
+      text-align: center;
+    }
+    .eyebrow {
+      display: inline-block;
+      margin: 0 0 16px;
+      color: var(--brand);
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    h1 {
+      max-width: 780px;
+      margin: 0 auto 20px;
+      font-size: clamp(2.3rem, 6vw, 4.5rem);
+      line-height: 1.06;
+      letter-spacing: -.045em;
+    }
+    .intro {
+      max-width: 650px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.2rem);
+    }
+    .actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 12px 22px;
+      border: 2px solid var(--brand);
+      border-radius: 12px;
+      background: var(--brand);
+      color: #fff;
+      font-weight: 750;
+      text-decoration: none;
+      transition: background .15s ease, transform .15s ease;
+    }
+    .button:hover { background: var(--brand-dark); transform: translateY(-1px); }
+    .button.secondary { background: transparent; color: var(--brand); }
+    .button.secondary:hover { background: #eff5ff; }
+    .section { padding: 54px 0 0; }
+    .section h2 { margin: 0 0 10px; text-align: center; font-size: clamp(1.6rem, 3vw, 2.2rem); }
+    .section-lead { max-width: 650px; margin: 0 auto 26px; color: var(--muted); text-align: center; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card {
+      padding: 24px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+    }
+    .card .number {
+      display: inline-grid;
+      place-items: center;
+      width: 40px;
+      height: 40px;
+      margin-bottom: 12px;
+      border-radius: 12px;
+      background: #eaf1ff;
+      color: var(--brand);
+      font-weight: 850;
+    }
+    .card h3 { margin: 0 0 8px; font-size: 1.1rem; }
+    .card p { margin: 0; color: var(--muted); }
+    .contact {
+      margin-top: 54px;
+      padding: 36px 24px;
+      background: #eaf1ff;
+      border: 1px solid #d6e4ff;
+      border-radius: 22px;
+      text-align: center;
+    }
+    .contact h2 { margin: 0 0 8px; }
+    .contact p { margin: 0 auto 20px; color: var(--muted); }
+    footer { padding: 28px 0 36px; color: var(--muted); font-size: .9rem; text-align: center; }
+    @media (max-width: 700px) {
+      main { padding-top: 28px; }
+      .cards { grid-template-columns: 1fr; }
+      .nav { min-height: 66px; }
+      .hero { border-radius: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <!-- CHANGE: Replace "YOUR BRAND" with your business or project name. -->
+      <a class="brand" href="#" aria-label="Your Brand home">EE.ORG TESTING 001</a>
+      <a class="contact-link" href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" aria-labelledby="main-heading">
+      <p class="eyebrow">Welcome</p>
+      <!-- CHANGE: Replace this headline with what you offer. -->
+      <h1 id="main-heading">A simple way to move forward.</h1>
+      <!-- CHANGE: Briefly explain what you do and who you help. -->
+      <p class="intro">
+        We help people and businesses get what they need with clear information,
+        dependable service, and a straightforward next step.
+      </p>
+      <div class="actions">
+        <!-- CHANGE: Replace the URL below with your destination. -->
+        <a class="button" href="mailto:hello@example.com">Get in touch</a>
+        <a class="button secondary" href="#benefits">Learn more</a>
+      </div>
+    </section>
+
+    <section class="section" id="benefits" aria-labelledby="benefits-heading">
+      <h2 id="benefits-heading">How we can help</h2>
+      <p class="section-lead">Use these three short points to explain your main benefits.</p>
+      <div class="cards">
+        <article class="card">
+          <span class="number" aria-hidden="true">01</span>
+          <h3>Clear and simple</h3>
+          <p>Explain the first benefit in one or two short sentences.</p>
+        </article>
+        <article class="card">
+          <span class="number" aria-hidden="true">02</span>
+          <h3>Reliable support</h3>
+          <p>Tell visitors what makes your service useful or trustworthy.</p>
+        </article>
+        <article class="card">
+          <span class="number" aria-hidden="true">03</span>
+          <h3>Easy next steps</h3>
+          <p>Make it obvious what visitors should do when they are ready.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Ready to get started?</h2>
+      <p>Contact us and tell us what you are looking for.</p>
+      <!-- CHANGE: Replace hello@example.com with your real contact email or destination URL. -->
+      <a class="button" href="mailto:hello@example.com">Contact us</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © <span id="year">2026</span> YOUR BRAND. All rights reserved.
+    </div>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
